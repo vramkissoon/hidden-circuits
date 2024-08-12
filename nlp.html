@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Presidential Inaugurations and Natural Language Processing</title>
-    </head>
-    <body>
-        <h1>Enter some text:</h1>
-        <input type="text" id="userInput" placeholder="Speak to the nation...">
-        <button onclick="handleInput()">Submit</button>
-        <p id="displayText"></p>
-
-        <script src="count-unique.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Frequency Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        #input {
+            width: 50%;
+            height: 10em;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        #submit {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #submit:hover {
+            background-color: #3e8e41;
+        }
+        
+        #result {
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>String Frequency Counter</h1>
+    
+    <label for="input">Enter a string:</label>
+    <textarea id="input" name="input"></textarea>
+    
+    <button id="submit" type="button">Count Strings!</button>
+    
+    <div id="result"></div>
+    
+    <script src="script.js"></script>
+</body>
 </html>
