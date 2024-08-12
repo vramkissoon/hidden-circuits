@@ -4,7 +4,4 @@ function handleInput() {
 
     //Debug
     console.log(document.getElementById('userInput').value);
-
-    //Display the input value in the paragraph
-    document.getElementById('displayText').innerText = 'You entered: ${inputText}';
 }
