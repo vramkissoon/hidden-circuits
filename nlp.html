@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
         
         #input {
@@ -15,6 +16,8 @@
             padding: 10px;
             font-size: 18px;
             margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         
         #submit {
@@ -31,20 +34,40 @@
         
         #result {
             font-size: 18px;
-            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        #text-container {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 30px;
         }
     </style>
 </head>
 <body>
-    <h1>String Frequency Counter</h1>
+    <h2>My Story</h2>
+    <div id="text-container">
+        <p>I fell in love with computer science and programming in the spring of my freshman year. I had enrolled in 'How to Design Programs' with Professor Dan Licata. It was my first programming class ever. I did not know what to 
+expect. Yet, I would be lying if I said I did not expect the class to be incredibly meaningful in some way. Computers, almost as much as literature, underpinned some of my most formative interests. And now I was going to study the 
+art of computation formally. Of course it was going to be meaningful.</p>
+        <p>Language and math are motifs that reappear throughout my life. More than that, they are perhaps the foundations of my most creative acts.</p>
+        <p>I had two choices for a final project in Professor Licata's classs. I opted to not build a version of Brick Breaker. Instead, I chose the other option, the one which lay at the convergence of mathematics and spoken 
+language. I am going to recreate it now, and I am going to make it better.</p>
+    </div>
     
-    <label for="input">Enter a string:</label>
-    <textarea id="input" name="input"></textarea>
-    
-    <button id="submit" type="button">Count Strings!</button>
-    
+    <input id="input" type="text">
+    <button id="submit">Submit</button>
     <div id="result"></div>
-    
+
     <script src="count-unique.js"></script>
 </body>
 </html>
