@@ -3,7 +3,7 @@ function handleInput() {
    // const inputText = document.getElementById('userInput').value;
 
     //Debug
-    console.log('Input Text: ${inputText}');
+    console.log(document.getElementById('userInput'));
 
     //Display the input value in the paragraph
     //document.getElementById('displayText').innerText = 'You entered: ${inputText}';
